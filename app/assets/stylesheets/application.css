@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+h1, h2, h3, p, a {
+  font-family: helvetica;
+}
+
+.form {
+  font-family: helvetica;
+  font-size: 19px;
+}
