@@ -1,4 +1,4 @@
-<h1>Create new task</h1>
+<h1>Edit task: <%= @task.title %></h1>
 
 <%= form_for(@task) do |f| %>
   <div>
@@ -9,7 +9,10 @@
     <%= f.label :details %>
     <%= f.text_field :details %>
   </div>
-
-  <%= f.submit "🚀" %>
+  <div>
+    <%= f.label :completed %>
+    <%= f.check_box :completed %>
+  </div>
+  <%= f.submit "Update tasks" %>
 
 <% end %>
